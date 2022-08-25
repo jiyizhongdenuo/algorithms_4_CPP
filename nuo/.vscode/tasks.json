@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",//任务类型（如果是shell，下面的command就相当于执行shell命令）
+			"label": "C/C++: g++.exe 生成活动文件",//任务的名称，可以修改，但一定要和launch中的"preLaunchTask"项保持一致
+			"command": "D:\\mingw64\\bin\\g++.exe",//编译器（可执行文件）的路径
+			"args": [//（常用）编译时使用的参数，和命令行下相同
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				/*"-I",              
+				"${fileDirname}\\include",编译时包括头文件
+				"${workspaceFolder\\*.cpp}"编译当前工作（动态地址）下的所有。cpp文件
+				*/
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"//存放的编译文件
+			],//上述内容相当于在命令行下输入了: gcc hello.c -o hello
+			"options": {
+				"cwd": "${fileDirname}"//编译的目录
+			},
+			"problemMatcher": [
+				"$gcc"//使用gcc捕捉错误
+			],
+			"group": {
+				"kind": "build",//test or build
+				"isDefault": true//是否支持快捷键调试
+			},
+			"detail": "编译器: D:\\mingw64\\bin\\g++.exe"//一些描述性信息
+		}
+	]
+}
