@@ -1,20 +1,20 @@
 #include<iostream>
 
 template<int N,int M>
-int ** transpose(int ** ,int (&a)[N][M]);
+int ** Transpose(int ** ,int (&a)[N][M]);
 
-void printNM(int **);
+void PrintNM(int **);
 int main()
 {
     using std::cout; using std::endl;using std::cin;
     int a[2][3]={{1,2,3},{4,5,6}};
     int **temp;
-    transpose(temp,a);
+    Transpose(temp,a);
     return 0;
 }
 
 template<int N,int M>
-int ** transpose(int ** temp,int (&a)[N][M])
+int ** Transpose(int ** temp,int (&a)[N][M])
 {
     std::cout<<N<<"."<<M<<std::endl;
     temp=new int *[M];
