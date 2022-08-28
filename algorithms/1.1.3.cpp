@@ -19,8 +19,6 @@ int main(int argc,char **argv)
         { 
             cout<<"not equal"<<endl;
             break;
-        }
-        
+        }        
     }
-
 }

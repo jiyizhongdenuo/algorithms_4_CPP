@@ -1,17 +1,17 @@
 {
   "configurations": [
     {
-      "name": "C/C++: g++.exe 生成和调试活动文件",
+      "name": "C/C++: cpp.exe 生成活动文件",
       "type": "cppdbg",
       "request": "launch",
       "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "D:/mingw64/bin",
+      "cwd": "F:\\MinGW\\bin",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
-      "miDebuggerPath": "D:\\mingw64\\bin\\gdb.exe",
+      "miDebuggerPath": "F:\\MinGW\\bin\\gdb.exe",
       "setupCommands": [
         {
           "description": "为 gdb 启用整齐打印",
@@ -33,8 +33,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "d:/C/nuo/src",
-      "program": "d:/C/nuo/src/build/Debug/outDebug",
+      "cwd": "Z:/C++/nuo/src",
+      "program": "Z:/C++/nuo/src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
